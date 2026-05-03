@@ -1,0 +1,13 @@
+id,name,role,skills,experience_years,available,email
+1,Amir Seitkali,Backend Developer,"Python,FastAPI,PostgreSQL,Docker",4,true,amir@company.kz
+2,Dana Bekova,Frontend Developer,"React,TypeScript,CSS,Figma",3,true,dana@company.kz
+3,Nurlan Akhmetov,ML Engineer,"Python,TensorFlow,PyTorch,LangChain",5,true,nurlan@company.kz
+4,Aigul Zhaksybekova,Project Manager,"Agile,Jira,Communication,Planning",6,false,aigul@company.kz
+5,Ruslan Temirov,DevOps Engineer,"Docker,Kubernetes,CI/CD,AWS",4,true,ruslan@company.kz
+6,Madina Ospanova,Data Analyst,"Python,pandas,SQL,PowerBI",3,true,madina@company.kz
+7,Arman Suleimenov,Full Stack Developer,"Python,React,Node.js,PostgreSQL",5,true,arman@company.kz
+8,Zarina Bekturova,UI/UX Designer,"Figma,Adobe XD,Prototyping,Research",2,true,zarina@company.kz
+9,Yerlan Abdrakhmanov,Backend Developer,"Java,Spring Boot,Microservices,Kafka",6,false,yerlan@company.kz
+10,Saltanat Nurmanova,Project Manager,"Scrum,Risk Management,Stakeholder Management",4,true,saltanat@company.kz
+11,Dauren Kasymov,ML Engineer,"Python,scikit-learn,NLP,LangGraph",3,true,dauren@company.kz
+12,Aliya Seitkalieva,Frontend Developer,"Vue.js,React,JavaScript,HTML/CSS",4,true,aliya@company.kz

@@ -1,0 +1,5 @@
+langgraph
+langchain-anthropic
+pandas
+streamlit
+python-telegram-bot
