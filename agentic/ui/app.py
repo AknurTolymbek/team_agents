@@ -4,7 +4,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 import streamlit as st
 import json
-from agentic.graph import agent
+from agent.graph import agent
 
 st.set_page_config(page_title="AI Team Formation Agent", page_icon="🤖", layout="centered")
 
@@ -73,7 +73,7 @@ if "agent_result" in st.session_state:
         if col1.button(" Approve", type="primary"):
             st.session_state["agent_result"]["approval_status"] = "approved"
             with st.spinner("Generating report..."):
-                from agentic.graph import generate_report
+                from agent.graph import generate_report
                 final = generate_report(st.session_state["agent_result"])
                 st.session_state["agent_result"] = final
             st.rerun()
@@ -81,7 +81,7 @@ if "agent_result" in st.session_state:
         if col2.button(" Reject"):
             st.session_state["agent_result"]["approval_status"] = "rejected"
             with st.spinner("Generating report..."):
-                from agentic.graph import generate_report
+                from agent.graph import generate_report
                 final = generate_report(st.session_state["agent_result"])
                 st.session_state["agent_result"] = final
             st.rerun()
@@ -90,10 +90,10 @@ if "agent_result" in st.session_state:
 
     if result.get("approval_status") in ("approved", "rejected") and result.get("report"):
         st.divider()
-        st.subheader("📄 Final Report")
+        st.subheader(" Final Report")
         status = result["approval_status"]
         if status == "approved":
-            st.success("Team Approved ✅")
+            st.success("Team Approved ")
         else:
             st.error("Team Rejected ")
         st.code(result["report"], language="text")
