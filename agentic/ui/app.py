@@ -29,6 +29,8 @@ if st.button(" Find Team", type="primary", disabled=not request_text.strip()):
             "candidates": [],
             "team_proposal": {},
             "approval_status": "pending",
+            "rejection_count": 0,
+            "previous_teams": [],
             "report": ""
         }
         # Run up to form_team (before approval)
